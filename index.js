@@ -4,12 +4,6 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 const port = process.env.PORT || 3001;
 
-app.use(express.static(__dirname + '/../Client/build'));
-
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/../Client/build/index.html');
-});
-
 io.on('connection', function(socket){
   console.log('a user connected');
 
