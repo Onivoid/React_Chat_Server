@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.2.0",
     "express": "^4.17.1",
+    "node-env": "^0.1.6",
     "socket.io": "^2.2.0"
   }
 }
